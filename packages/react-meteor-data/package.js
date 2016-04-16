@@ -16,3 +16,8 @@ Package.onUse(function (api) {
 
   api.mainModule('react-meteor-data.jsx');
 });
+
+Package.onTest(function(api) {
+  api.use(['ecmascript', 'tinytest', 'react-meteor-data']);
+  api.mainModule('react-meteor-data.tests.jsx');
+});
