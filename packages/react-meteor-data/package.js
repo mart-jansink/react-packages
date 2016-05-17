@@ -18,6 +18,15 @@ Package.onUse(function (api) {
 });
 
 Package.onTest(function(api) {
-  api.use(['ecmascript', 'tinytest', 'react-meteor-data']);
+  api.use([
+    'underscore',
+    'reactive-var',
+    'tinytest',
+    'test-helpers',
+    'tracker',
+    'mongo',
+    'ecmascript',
+    'react-meteor-data'
+  ]);
   api.mainModule('react-meteor-data.tests.jsx');
 });
